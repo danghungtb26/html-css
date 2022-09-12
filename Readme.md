@@ -106,3 +106,82 @@ Các thuộc tính cơ bản cần phải biết
 + Float : dồn sang một bên
 
 + Border: tạo viền cho khôi
+
+Một số cách viết css khác 
+
+``` css
+    div > p {
+
+    }
+
+    div .item {
+        margin: 12px;
+        float: left;
+        flex-wrap: wrap;
+    }
+
+    div > .item {
+        margin: 12px;
+        
+    }
+
+    .item {
+        width: 360px;
+        border: 0.5px solid;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item div {
+        padding-left: 12px;
+    }
+
+    .item a {
+        font-size: 16px;
+        color: blue;
+    }
+
+    .item p {
+        font-size: 12px;
+        opacity: 0.5;
+    }
+
+    .item img {
+        width: 120px;
+    }
+
+```
+
+Ở đây, chúng ta có thể style cho các thẻ bằng, cho việc lồng thẻ
+ví dụ 
+- div > p:  Tức là sẽ tự đồng tìm các thẻ `p` nằm trong thẻ `div` và `style` cho nó
+- div .item: tức là tìm các thẻ `div` có class là `item` rồi mới style cho nó
+- .item > div: Tức là tìm thẻ `div` nằm trong cặp thẻ có class là `item` rồi mới style
+
+# 4 Thuộc tính hover
+Hover là thuộc tính khi mà người dùng trỏ chuột vào khối nào đó
+khi đó chúng ta có thể thay đổi style cho khổi đó
+
+Cách viết
+```css
+    .item:hover {
+    margin-top: 12px;
+    transition: 0.4s;
+    cursor: pointer;
+    }
+
+    .item:hover a {
+        color: aqua;
+    }
+
+    .item:hover p {
+        opacity: 1;
+    }
+
+    .item:hover img {
+        box-shadow: 5px 10px #fff;
+    }
+```
+
+Chi khác với css là có thêm `:hover` sau các thuộc tính như `.class`, `#id`, `tên thẻ` để nhận biết khi trỏ chuộc vào vị trí đó (có thể xem ví dụ trong file [index.html](./index.html))

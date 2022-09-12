@@ -78,6 +78,7 @@ Các thuộc tính cơ bản cần phải biết
     - Margin là biên giữa hai khối,
     - Padding là lề của nội dung so với khối.
 <img src="https://goclamweb.com/wp-content/uploads/2018/02/padding-va-margin.png">
+
 + Border : viền, 1px (độ dày) black (màu) solid (loại nét)
 
 + Text-align : canh lề
